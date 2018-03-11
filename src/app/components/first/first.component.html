@@ -1,0 +1,10 @@
+<p>
+  first works!
+</p>
+<h1>
+  {{myName}}
+</h1>
+
+<input type="text" [(ngModel)]="userName" #userName1="ngModel">
+<button (click)="changeUserName()" [attr.disabled]="(userName1.value=='')?true:null">Change Name</button>
+{{userName1.value}}
