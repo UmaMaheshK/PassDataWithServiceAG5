@@ -13,6 +13,7 @@ export class FirstComponent implements OnInit {
 
   ngOnInit() {
     this.userService.name.subscribe(s => this.myName = s);
+    console.log('message ', this.myName)
   }
   changeUserName() {
     this.userService.Name = this.userName;
